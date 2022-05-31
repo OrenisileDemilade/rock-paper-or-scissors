@@ -1,12 +1,12 @@
 #Rock, Paper, Scissors Game
-from random import randint
+from random import choice
 
 #moves
 moves = ["rock", "paper", "scissors"]
 
 while True:
-    computer = moves[randint(0,2)]
-    player = input("rock, paper or scissors (or end the game)").lower()
+    computer = choice(moves)
+    player = input("Choose either rock, paper or scissors (or end the game)--->").lower()
     if player == "end the game":
         print("The game has ended. Hope you enjoyed it")
         break
