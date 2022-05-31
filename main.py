@@ -17,15 +17,18 @@ while True:
             print("You lose!", computer, "beats", player )
         else:
             print("You win!", player, "beats", computer)
+            break
     elif player == "scissors":
         if computer == "rock":
             print("You lose!", computer, "beats", player )
         else:
             print("You win!", player, "beats", computer)
+            break
     elif player == "paper":
         if computer == "scissors":
             print("You lose!", computer, "beats", player )
         else:
             print("You win!", player, "beats", computer)
+            break
     else:
         print("please check your spelling and try again")
